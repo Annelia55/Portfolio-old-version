@@ -1,0 +1,27 @@
+header {
+    text-align: center;
+    background: #4a0013;
+    color: white;
+}
+.container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    }
+img {
+    display: block;
+    margin: 0 auto 20px; /* top - left,right - bottom */
+    }
+.intro-text > .name {
+    display: block;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase; /* все буквы большие */
+    font-weight: 700;
+    font-size: 2em;
+    }
+.intro-text > .skills {
+    font-size: 1.25em;
+    font-weight: 300;
+    }
+.hr-icon {
+    width: 630px;
+}
