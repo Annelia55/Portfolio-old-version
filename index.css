@@ -1,27 +1,138 @@
-header {
-    text-align: center;
-    background: #4a0013;
+/* NAVBAR begining */
+.navbar {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    background: rgba(58, 0, 20, 0.81);
+}
+
+.navbar a:focus {
+    outline: 0;
+}
+
+.navbar .navbar-nav {
+    letter-spacing: 1px;
+}
+.navbar .navbar-nav li a {
+    color: #e1ccbe;
+}
+
+.navbar .navbar-nav li a:focus {
+    outline: 0;
     color: white;
 }
-.container {
+.navbar .navbar-nav li a:hover {
+    color: white;
+}
+
+.navbar-default,
+.navbar-inverse {
+    border: 0;
+}
+.navbar .container .navbar-header a:hover {
+    color: white;
+}
+.container .navbar-header > a {
+    color: #e1ccbe;
+}
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 25px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: 1.70em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+
+    }
+
+    .navbar-fixed-top.navbar-shrink { /* navbar-shrink = уменьшение navbar при прокрутке экрана */
+        padding: 10px 0;
+    }
+
+    .navbar-fixed-top.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+/* MOBILE MENU */
+/* Цвет рамки у кнопки, которая открывает меню */
+.navbar-default .navbar-toggle {
+    border-color: rgba(59, 0, 20, 0.73);
+}
+/* Цвет фона кнопки (которая открывает меню) при поднесении к ней курсора мышки или при нахождении её в фокусе */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #440013;
+}
+/* Цвет полосочек в кнопочке, которая открывает меню */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #e1ccbe;
+}
+
+/* NAVBAR end */
+
+/* PAGE TOP begining */
+header {
+    text-align: center;
+    background: #440013;
+    color: #e1ccbe;
+}
+header .container {
     padding-top: 100px;
     padding-bottom: 50px;
-    }
+}
+header img {
+    display: block;
+    margin: 0 auto 40px;
+}
+header .intro-text .name {
+    display: block;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+header .intro-text .skills {
+    font-size: 1.25em;
+    font-weight: 300;
+}
 img {
     display: block;
     margin: 0 auto 20px; /* top - left,right - bottom */
-    }
+}
 .intro-text > .name {
     display: block;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase; /* все буквы большие */
     font-weight: 700;
     font-size: 2em;
-    }
+}
 .intro-text > .skills {
     font-size: 1.25em;
     font-weight: 300;
-    }
+}
 .hr-icon {
     width: 630px;
+    border-color: #e1ccbe;
 }
+@media(min-width:768px) {
+    header .container {
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+
+    header .intro-text .name {
+        font-size: 4.75em;
+    }
+
+    header .intro-text .skills {
+        font-size: 1.75em;
+    }
+}
+/* PAGE TOP end */
