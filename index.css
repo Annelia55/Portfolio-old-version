@@ -121,6 +121,10 @@ img {
     width: 630px;
     border-color: #e1ccbe;
 }
+.hr-icon_2 {
+    width: 630px;
+    border-color: #440013;
+}
 @media(min-width:768px) {
     header .container {
         padding-top: 200px;
