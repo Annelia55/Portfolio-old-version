@@ -48,7 +48,6 @@
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
-
     }
 
     .navbar-fixed-top.navbar-shrink { /* navbar-shrink = уменьшение navbar при прокрутке экрана */
@@ -145,8 +144,13 @@ img {
 #portfolio {
     background-color: #e1ccbe;
 }
-#portfolio > h2 {
-
+#portfolio .p_title > h2 {
+    text-align: center;
+    color: #440013;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-top: 20px;
+}
 }
 
 #portfolio .portfolio-item {
@@ -204,3 +208,39 @@ img {
 .portfolio-item .caption .caption-content .fa-eye {
     color: #e1ccbe;
 }
+
+/* Scrolling btn on resized screen */
+.scroll-top {
+    z-index: 1049;
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    width: 50px;
+    height: 50px;
+}
+
+.scroll-top .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 23px;
+    line-height: 20px;
+}
+
+.scroll-top .btn:focus {
+    outline: none;
+}
+
+.scroll-top .btn:hover {
+    color: white;
+}
+
+.scroll-top .btn > i {
+    margin-left: -3px;
+}
+
+.scroll-top .btn .fa-chevron-up {
+    color: #e1ccbe;
+
+}
+

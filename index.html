@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- оптимизация под мобильные устройства -->
     <meta name="description" content="Портфолио">
     <meta name="author" content="Егоренкова Анна">
-    <link href="css/bootstrap.min.css" rel= "stylesheet">
 
+    <link href="css/bootstrap.min.css" rel= "stylesheet">
     <link type="text/css" rel="stylesheet" href="index.css"/>
 
     <title>Portfolio</title>
@@ -18,12 +18,14 @@
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
+    <script src="js/index.js"></script>
+
 
 </head>
 <body  id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
+        <div class="container clearfix">
             <!-- for mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -73,7 +75,7 @@
 <section id="portfolio">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 p_title">
                 <h2>Portfolio</h2>
                 <hr class="hr-icon_2">
             </div>
@@ -129,7 +131,12 @@
     </div>
 </section>
 
-
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
 
 
 <!-- jQuery -->
