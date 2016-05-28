@@ -1,3 +1,4 @@
+
 /* NAVBAR begining */
 .navbar {
     text-transform: uppercase;
@@ -150,6 +151,7 @@ img {
     font-size: 2.2em;
     font-weight: 800;
     margin-top: 20px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 }
 
@@ -205,7 +207,9 @@ img {
         margin: 0 0 30px;
     }
 }
-.portfolio-item .caption .caption-content .fa-eye {
+.portfolio-item .caption .caption-content .fa-eye,
+.portfolio-item .caption .caption-content .fa-search-plus
+{
     color: #e1ccbe;
 }
 
