@@ -142,10 +142,12 @@ img {
 /* PAGE TOP end */
 
 /* PORTFOLIO page */
-#portfolio {
+#w_portfolio,
+#r_portfolio {
     background-color: #e1ccbe;
 }
-#portfolio .p_title > h2 {
+#w_portfolio .p_title > h2,
+#r_portfolio .p_title > h2 {
     text-align: center;
     color: #440013;
     font-size: 2.2em;
@@ -155,19 +157,22 @@ img {
 }
 }
 
-#portfolio .portfolio-item {
+#w_portfolio .portfolio-item,
+#r_portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#portfolio .portfolio-item .portfolio-link {
+#w_portfolio .portfolio-item .portfolio-link,
+#r_portfolio .portfolio-item .portfolio-link{
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption {
+#w_portfolio .portfolio-item .portfolio-link .caption,
+#r_portfolio .portfolio-item .portfolio-link .caption {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -178,11 +183,13 @@ img {
     transition: all ease .5s;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption:hover {
+#w_portfolio .portfolio-item .portfolio-link .caption:hover,
+#r_portfolio .portfolio-item .portfolio-link .caption:hover {
     opacity: 1;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+#w_portfolio .portfolio-item .portfolio-link .caption .caption-content,
+#r_portfolio .portfolio-item .portfolio-link .caption .caption-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -193,22 +200,28 @@ img {
     color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+#w_portfolio .portfolio-item .portfolio-link .caption .caption-content i,
+#r_portfolio .portfolio-item .portfolio-link .caption .caption-content i {
     margin-top: -12px;
 }
 
 
-#portfolio * {
+#w_portfolio * {
     z-index: 2;
+}
+#r_portfolio * {
+    z-index: 3;
 }
 
 @media(min-width:767px) {
-    #portfolio .portfolio-item {
+    #w_portfolio .portfolio-item,
+    #r_portfolio .portfolio-item {
         margin: 0 0 30px;
     }
 }
 .portfolio-item .caption .caption-content .fa-eye,
-.portfolio-item .caption .caption-content .fa-search-plus
+.portfolio-item .caption .caption-content .fa-search-plus,
+
 {
     color: #e1ccbe;
 }
